@@ -77,14 +77,15 @@ def dobavitd(event):
         list2.close()
 
 def naiti(event):
-    f=open('raamatud.txt')
-    a=1
-    for i in f:
-        if i==kniga.get()+'\n':
-            lbl5['text']='Книга '+i+' в библиотеке!'
-            break
-        else:
-            lbl5['text']='Книги нет\nв библиотеке!'
+       if len(kniga.get()) !=0:
+              f=open('raamatud.txt')
+              a=1
+              for i in f:
+                     if i==kniga.get()+'\n':
+                            lbl5['text']='Книга '+i+' в библиотеке!'
+                            break
+                     else:
+                            lbl5['text']='Книги нет\nв библиотеке!'
 
 button1=Button(root, text='Вход')
 button1.grid(row=1,column=2)
