@@ -29,7 +29,7 @@ lbl3=Label(root, text='Книги в библиотеке: ')
 lbl3.grid(row=2,column=2)
 lbl4=Label(root, text='Найти книгy: ')
 lbl4.grid(row=6,column=0)
-lbl5=Label(root, text='das')
+lbl5=Label(root, text='')
 lbl5.place(x=105,y=240)
 
 def vhod(event):
