@@ -79,7 +79,6 @@ def dobavitd(event):
 def naiti(event):
        if len(kniga.get()) !=0:
               f=open('raamatud.txt')
-              a=1
               for i in f:
                      if i==kniga.get()+'\n':
                             lbl5['text']='Книга '+i+' в библиотеке!'
